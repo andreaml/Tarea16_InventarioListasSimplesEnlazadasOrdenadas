@@ -39,5 +39,10 @@ namespace Tarea16_ListasEnlazadasSimplesOrdenadas
         {
             txtReporte.Text = miInventario.reporte();
         }
+
+        private void btnReporteInverso_Click(object sender, EventArgs e)
+        {
+            txtReporte.Text = miInventario.reporteInverso();
+        }
     }
 }

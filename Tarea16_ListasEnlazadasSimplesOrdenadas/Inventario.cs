@@ -118,5 +118,21 @@ namespace Tarea16_ListasEnlazadasSimplesOrdenadas
             }
             return reporte;
         }
+
+        //////////////////////// Uso de recursividad para realizar la impresión del reporte de elementos existentes ordenados descendentemente. /////////////////////////
+        public string reporteInverso()
+        {
+            string reporte = "";
+            reporte = reporteInverso(_primero, reporte);
+            return reporte;
+        }
+
+        private string reporteInverso(Producto ultimo, string reporte)
+        {
+            if (ultimo.siguiente != null)
+                return reporte = reporteInverso(ultimo.siguiente, reporte) + ultimo.ToString() + Environment.NewLine + "----------------------------" + Environment.NewLine;
+            else
+                return reporte = reporte + ultimo.ToString() + Environment.NewLine + "----------------------------" + Environment.NewLine;
+        }
     }
 }

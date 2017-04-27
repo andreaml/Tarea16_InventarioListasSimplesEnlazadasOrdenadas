@@ -41,6 +41,7 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnReporte = new System.Windows.Forms.Button();
             this.txtReporte = new System.Windows.Forms.TextBox();
+            this.btnReporteInverso = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblCodigo
@@ -161,11 +162,23 @@
             this.txtReporte.Size = new System.Drawing.Size(237, 210);
             this.txtReporte.TabIndex = 12;
             // 
+            // btnReporteInverso
+            // 
+            this.btnReporteInverso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReporteInverso.Location = new System.Drawing.Point(295, 10);
+            this.btnReporteInverso.Name = "btnReporteInverso";
+            this.btnReporteInverso.Size = new System.Drawing.Size(100, 23);
+            this.btnReporteInverso.TabIndex = 13;
+            this.btnReporteInverso.Text = "Reporte inverso";
+            this.btnReporteInverso.UseVisualStyleBackColor = true;
+            this.btnReporteInverso.Click += new System.EventHandler(this.btnReporteInverso_Click);
+            // 
             // frmPantallaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(438, 261);
+            this.Controls.Add(this.btnReporteInverso);
             this.Controls.Add(this.txtReporte);
             this.Controls.Add(this.btnReporte);
             this.Controls.Add(this.btnEliminar);
@@ -201,6 +214,7 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnReporte;
         private System.Windows.Forms.TextBox txtReporte;
+        private System.Windows.Forms.Button btnReporteInverso;
     }
 }
 
